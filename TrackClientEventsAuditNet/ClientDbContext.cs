@@ -11,7 +11,7 @@ public class ClientDbContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(
-            "Server=localhost,6666;Database=TrackClientEventsAuditNet;User ID=sa;Password=P@ssw0rd");
+            "Server=localhost,1433;Database=TrackClientEventsAuditNet;User ID=sa;Password=P@ssw0rd");
         optionsBuilder.AddInterceptors(new AuditSaveChangesInterceptor());
     }
 

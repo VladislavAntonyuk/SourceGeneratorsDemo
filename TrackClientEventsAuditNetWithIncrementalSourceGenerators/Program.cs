@@ -1,6 +1,6 @@
 ﻿using Audit.Core;
 using Entities;
-using TrackClientEventsAuditNetWithSourceGenerators;
+using TrackClientEventsAuditNetWithIncrementalSourceGenerators;
 
 Configuration.Setup()
     .UseEntityFramework(ef => ef

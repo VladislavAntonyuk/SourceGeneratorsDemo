@@ -17,7 +17,7 @@ public class ClientDbContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(
-            "Server=localhost,6666;Database=TrackClientEventsAutoHistory;User ID=sa;Password=P@ssw0rd");
+            "Server=localhost,1433;Database=TrackClientEventsAutoHistory;User ID=sa;Password=P@ssw0rd");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)

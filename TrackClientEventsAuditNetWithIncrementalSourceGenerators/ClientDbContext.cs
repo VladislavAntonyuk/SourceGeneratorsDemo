@@ -1,7 +1,7 @@
 using Audit.EntityFramework;
 using Microsoft.EntityFrameworkCore;
 
-namespace TrackClientEventsAuditNetWithSourceGenerators;
+namespace TrackClientEventsAuditNetWithIncrementalSourceGenerators;
 
 public partial class ClientDbContext : DbContext
 {
@@ -10,7 +10,7 @@ public partial class ClientDbContext : DbContext
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         optionsBuilder.UseSqlServer(
-            "Server=localhost,1433;Database=TrackClientEventsSourceGenerators;User ID=sa;Password=P@ssw0rd");
+            "Server=localhost,1433;Database=TrackClientEventsIncrementalSourceGenerators;User ID=sa;Password=P@ssw0rd");
         optionsBuilder.AddInterceptors(new AuditSaveChangesInterceptor());
     }
 

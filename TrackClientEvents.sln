@@ -10,6 +10,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities.SourceGenerators",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackClientEventsAuditNetWithSourceGenerators", "TrackClientEventsAuditNetWithSourceGenerators\TrackClientEventsAuditNetWithSourceGenerators.csproj", "{A9BD16AF-945A-493A-ABC8-D7CD2103EF8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities.IncrementalSourceGenerators", "Entities.IncrementalSourceGenerators\Entities.IncrementalSourceGenerators.csproj", "{A00B8911-5B25-4C81-A9AC-512CBF89437B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrackClientEventsAuditNetWithIncrementalSourceGenerators", "TrackClientEventsAuditNetWithIncrementalSourceGenerators\TrackClientEventsAuditNetWithIncrementalSourceGenerators.csproj", "{A36847A1-34A1-4F29-A311-1CCA40696243}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,5 +40,13 @@ Global
 		{A9BD16AF-945A-493A-ABC8-D7CD2103EF8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9BD16AF-945A-493A-ABC8-D7CD2103EF8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A9BD16AF-945A-493A-ABC8-D7CD2103EF8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A00B8911-5B25-4C81-A9AC-512CBF89437B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A00B8911-5B25-4C81-A9AC-512CBF89437B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A00B8911-5B25-4C81-A9AC-512CBF89437B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A00B8911-5B25-4C81-A9AC-512CBF89437B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A36847A1-34A1-4F29-A311-1CCA40696243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A36847A1-34A1-4F29-A311-1CCA40696243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A36847A1-34A1-4F29-A311-1CCA40696243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A36847A1-34A1-4F29-A311-1CCA40696243}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -20,7 +20,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Entities.SourceGenerators\Entities.SourceGenerators.csproj"
+		<ProjectReference Include="..\Entities.IncrementalSourceGenerators\Entities.IncrementalSourceGenerators.csproj"
 		                  SetTargetFramework="TargetFramework=netstandard2.0" OutputItemType="Analyzer"
 		                  ReferenceOutputAssembly="false" />
 	</ItemGroup>
