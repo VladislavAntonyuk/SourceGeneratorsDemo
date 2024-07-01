@@ -1,0 +1,8 @@
+{
+  "profiles": {
+	"Entities.IncrementalSourceGenerators": {
+	  "commandName": "DebugRoslynComponent",
+	  "targetProject": "..\\TrackClientEventsAuditNetWithIncrementalSourceGenerators\\TrackClientEventsAuditNetWithIncrementalSourceGenerators.csproj"
+	}
+  }
+}
