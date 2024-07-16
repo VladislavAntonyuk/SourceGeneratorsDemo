@@ -70,7 +70,6 @@ public class AuditGenerator : IIncrementalGenerator
 	{
 		if (auditToGenerate is { } eg)
 		{
-
 			var result = SourceGenerationHelper.GetAuditableClassCode(eg);
 			context.AddSource($"{eg.Name}Auditable.g.cs", SourceText.From(result, Encoding.UTF8));
 		}

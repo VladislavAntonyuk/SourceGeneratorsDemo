@@ -15,7 +15,6 @@ public readonly record struct AuditToGenerate
         Namespace = ns;
         PropertyTypes = new EquatableArray<(string, PropertyValueOption)>(properties.ToArray());
     }
-
 }
 
 public readonly record struct AuditToGenerate2
