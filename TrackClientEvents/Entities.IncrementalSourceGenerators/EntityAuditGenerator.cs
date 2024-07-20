@@ -44,7 +44,7 @@ public class AuditGenerator : IIncrementalGenerator
 		context.RegisterImplementationSourceOutput(auditableTypes, (ctx, source) =>
 		{
 			var types = new List<(string originalClassName, string generatedClassName)>();
-			foreach (var s in source.SelectMany(x=>x.Value.PropertyTypes))
+			foreach (var s in source.SelectMany(x => x.Value.PropertyTypes))
 			{
 				types.Add((s.Key, s.Value));
 			}
@@ -59,7 +59,7 @@ public class AuditGenerator : IIncrementalGenerator
 
 	private AuditToGenerate2? GetTypeToGenerate2(GeneratorAttributeSyntaxContext context, CancellationToken arg2)
 	{
-		var item = (context.SemanticModel.GetDeclaredSymbol(context.TargetNode) as INamedTypeSymbol);
+		var item = context.SemanticModel.GetDeclaredSymbol(context.TargetNode);
 		return new AuditToGenerate2(new List<(string, string)>()
 		{
 			(item.Name, item.Name + "Auditable")

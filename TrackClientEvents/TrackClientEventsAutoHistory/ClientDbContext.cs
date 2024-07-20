@@ -7,7 +7,7 @@ namespace TrackClientEventsAutoHistory;
 
 public class CustomAutoHistory : AutoHistory
 {
-    public string UserId { get; set; }
+    public required string UserId { get; set; }
 }
 
 public class ClientDbContext : DbContext
@@ -51,6 +51,7 @@ public class ClientDbContext : DbContext
 
     private async Task<string> GetUserId()
     {
+        await Task.Delay(100);
         return "abc";
     }
 }
@@ -58,7 +59,7 @@ public class ClientDbContext : DbContext
 public class Client
 {
     public int Id { get; set; }
-    public string Name { get; set; }
+    public required string Name { get; set; }
     public ClientStatus Status { get; set; }
 
     [ExcludeFromHistory] public DateTime? Birthday { get; set; }

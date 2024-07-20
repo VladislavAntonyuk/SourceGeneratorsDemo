@@ -10,6 +10,6 @@ public class Audit_Client
     public string? Name { get; set; }
     public ClientStatus Status { get; set; }
     public DateTime AuditDate { get; set; }
-    public string UserId { get; set; }
-    public string ActionType { get; set; }
+    public required string UserId { get; set; }
+    public required string ActionType { get; set; }
 }
